@@ -1,0 +1,15 @@
+name: CommandsPlugin2
+version: '${project.version}'
+main: me.shadow_warrior_.commandsplugin2.CommandsPlugin2
+api-version: 1.16
+authors: [ shadow_warrior_ ]
+description: Commands in different classes
+commands:
+  god:
+    description: Become invincible
+    usage: /<command>
+    aliases:
+      - g
+  feed:
+    description: Feeding
+    usage: /<command>
