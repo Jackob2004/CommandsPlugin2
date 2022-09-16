@@ -13,9 +13,10 @@ public class FeedCommand implements CommandExecutor {
 
         if (sender instanceof Player){
             Player p = (Player) sender;
-            p.setFoodLevel(20);
-            p.sendMessage(ChatColor.YELLOW + "Now you are full");
-
+            if (p.hasPermission("commandsplugin2.feed")) { // permission
+                p.setFoodLevel(20);
+                p.sendMessage(ChatColor.YELLOW + "Now you are full");
+            }else p.sendMessage("You do not have the permission to that command");
         }
 
         return true;
