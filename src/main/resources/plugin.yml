@@ -13,3 +13,6 @@ commands:
   feed:
     description: Feeding
     usage: /<command>
+  repeat:
+    description: Repeating your input
+    usage: /<command> <message>
