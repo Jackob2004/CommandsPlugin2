@@ -16,3 +16,6 @@ commands:
   repeat:
     description: Repeating your input
     usage: /<command> <message>
+  psm:
+    description: BLocking targets from moving
+    usage: /<command> <player>

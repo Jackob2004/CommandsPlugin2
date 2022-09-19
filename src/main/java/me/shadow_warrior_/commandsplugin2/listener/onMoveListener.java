@@ -9,8 +9,9 @@ public class onMoveListener implements Listener {
     @EventHandler
     public void onPlayerMove(PlayerMoveEvent e){
         Player player = e.getPlayer();
-        if (!player.hasPermission("commandsplugin2.move")){
+        if (player.getFlySpeed() == -1){
             e.setCancelled(true);
+
         }
     }
 }
